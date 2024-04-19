@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenline Foundation</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <!-- Placeholder for logo image -->
+        <img src="img/GLF logo.png" alt="Greenline Foundation Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#membership">Become Member</a></li>
+      </ul>
+      <div class="menu-icon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content">
+      <section id="home" class="content">
+        <img src="img/Blue and Yellow Minimalist Interior Design Logo.png" alt="Home Image" class="animated-image" style="width: 100%;">
+      </section>
+        </div>   
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="content">
+      <h2>About Greenline Foundation</h2>
+      <div class="about-description">
+        <p>Established on April 11, 2024, in Bayelsa State, Greenline Foundation was founded by a group of passionate individual corp members of Batch A stream 1, led by Quadri Damilare Ibrahim, the President of the foundation. Motivated by a profound desire to give back to society, the foundation embarked on a noble mission to honor the legacy of fallen soldiers who bravely served our country.</p>
+  
+        <h3>Our Mission</h3>
+        <p>At Greenline Foundation, our mission is to provide support and assistance to the families of deceased soldiers who made the ultimate sacrifice in safeguarding our nation. We aim to ensure that the families left behind receive the care and support they deserve, particularly focusing on providing education opportunities for the children of fallen heroes.</p>
+  
+        <h3>Our Vision</h3>
+        <p>Our vision is to create a society where the sacrifices of our fallen soldiers are acknowledged and honored, and where their families are provided with the necessary support to lead fulfilling lives. We aspire to build a future where the children of fallen soldiers have access to quality education and are empowered to pursue their dreams without limitations.</p>
+  
+        <h3>Core Values</h3>
+        <ul class="core-values">
+          <li><strong>Commitment:</strong> <p>We are dedicated to fulfilling our mission with unwavering commitment and dedication.</li>
+          </p><li><strong>Compassion:</strong><p>We approach our work with empathy and compassion, understanding the challenges faced by the families we support.</li>
+          </p> <li><strong>Integrity:</strong><p>We uphold the highest standards of integrity and transparency in all our actions and interactions.</li>
+          </p> <li><strong>Respect:</strong> <p>We respect the sacrifices made by our fallen heroes and their families, and we honor their memory with dignity and respect.</li>
+        </p></ul>
+  
+        <h3>Our Commitment</h3>
+        <p>Greenline Foundation is committed to making a meaningful impact in the lives of the families of fallen soldiers. Through our programs and initiatives, we strive to provide comprehensive support that addresses the unique needs of each family. Together, we can ensure that the legacy of our fallen heroes lives on and that their families receive the care and assistance they deserve.</p>
+  
+        <p class="call-to-action">Join us in honoring the sacrifice of our brave soldiers and in making a difference in the lives of their families.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="donate">
+    <div class="content">
+      <h2>Donate</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="amount">Amount (NGN):</label>
+        <input type="number" id="amount" name="amount" min="500" max="1000000000000" required>
+        <button type="button" onclick="decreaseAmount()">-</button>
+        <button type="button" onclick="increaseAmount()">+</button>
+        <button type="submit">Donate</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p><strong>Company Address:</strong> 27b, Efunlawon Estate, Igbelara Ikorodu, Lagos</p>
+        <p><strong>Phone Number:</strong> 09023098104</p>
+        <p><strong>WhatsApp Number:</strong> 08128244267</p>
+        <p><strong>Email:</strong> info@Greenline.com</p>
+      </div>
+      <div class="membership-form">
+        <h2>Become a Member</h2>
+        <form action="#" method="POST">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" required><br><br>
+          <label for="status">Status:</label><br>
+          <select id="status" name="status" required>
+            <option value="veteran">Veteran</option>
+            <option value="volunteer">Volunteer</option>
+            <option value="army">ARMY</option>
+            <option value="navy">NAVY</option>
+            <option value="air-force">AIR FORCE</option>
+          </select><br><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
+  
+   
+
+  <footer>
+    <p>&copy; 2024 Greenline Foundation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
