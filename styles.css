@@ -103,7 +103,7 @@ header {
       justify-content: center;
       align-items: center;
       background-color: green;
-      height: 60vh;
+      height: 100vh;
       width: 100%;
       flex-direction: column;
       position: fixed;
@@ -144,7 +144,7 @@ header {
       border-radius: 5px;
       font-weight: bolder;
       text-decoration: none;
-      padding: 30px;
+      padding: 10px;
       display: block;
       margin: 10px; /* Add space between links */
       transition: color 0.3s; /* Add transition effect for color change */
