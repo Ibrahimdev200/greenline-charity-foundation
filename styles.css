@@ -78,6 +78,14 @@ header {
     transition: transform 0.3s; /* Add transition */
   }
 
+  
+
+  
+  /* Show menu items when the menu is active */
+  .menu.active li {
+    display: block;
+  }
+
   header {
     background-color: rgba(158, 189, 108, 0.993); /* Adjust the background color and opacity as needed */
     color: #fff;
@@ -91,20 +99,97 @@ header {
   @media screen and (max-width: 768px) {
     .menu {
       display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: green;
+      height: 60vh;
+      width: 100%;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%);
+      
     }
+
+    .menu.active li {
+      margin-bottom: 20px;
+    }
+
+     /* Display menu when active */
+    .menu.active {
+      display: flex;
+      background-color: green;
+      transform: translateY(0);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: green; /* Change to your desired background color */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999; /* Ensure it's above other content */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for opening and closing */
+  
+    }
+  
+    .menu a {
+      color: #fff;
+      border-radius: 5px;
+      font-weight: bolder;
+      text-decoration: none;
+      padding: 30px;
+      display: block;
+      margin: 10px; /* Add space between links */
+      transition: color 0.3s; /* Add transition effect for color change */
+      display: block;
+      margin: 10px; /* Add space between links */
+      border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effect for color change */
+    text-decoration: none;
+
+      
+      font-size: 18px;
+    }
+  
+    .menu a:hover {
+      background-color: rgba(22, 21, 21, 0.959);
+      color: #00ff00; /* Change to your desired hover color */
+    }
+  
     .menu-icon {
       display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1100;
+      cursor: pointer;
     }
-    .menu-icon.open .line:nth-child(1) {
+
+    .menu.active a {
+      font-size: 24px; /* Adjust font size for mobile */
+    }
+  
+    .menu-icon.active .line:nth-child(1) {
       transform: rotate(-45deg) translate(-5px, 6px);
     }
-    .menu-icon.open .line:nth-child(2) {
-      opacity: 0;
-    }
-    .menu-icon.open .line:nth-child(3) {
-      transform: rotate(45deg) translate(-5px, -6px);
-    }
+
+    
+  .menu-icon.active .line:nth-child(2) {
+    opacity: 0;
   }
+
+  .menu-icon.active .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  }
+  
   
   
   
@@ -392,7 +477,8 @@ form {
   footer a:hover {
     text-decoration: underline;
   }
-  
+ 
+
   /* Media Queries */
   @media only screen and (max-width: 600px) {
     /* Adjust menu for mobile */
@@ -427,4 +513,17 @@ form {
       margin: 0 auto;
     }
   }
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
